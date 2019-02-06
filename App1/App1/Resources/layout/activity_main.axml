@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <ImageView
+		android:src="@android:drawable/ic_menu_gallery"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:minWidth="30px"
+		
+		android:minHeight="30px"
+		android:id="@+id/imageView1" 
+	     android:layout_marginLeft = "130dp"
+	     android:layout_marginTop = "50dp"/>
+	<GridLayout
+		android:minWidth="30px"
+		android:minHeight="30px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+
+	   
+		android:rowCount = "3"
+		android:columnCount = "2"
+		
+		android:id="@+id/gridLayout1"
+		android:layout_marginTop = "170dp">
+		
+		<TextView
+			android:text="Weight(kg)"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginLeft = "97dp"
+			android:textColor="@android:color/holo_red_dark"
+			android:id="@+id/tvweight" />
+		<EditText
+			android:inputType="number"
+			android:id="@+id/etweight"
+		android:textColor="@android:color/holo_blue_dark"/>
+		<TextView
+			android:text="Height(cm)"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@android:color/holo_red_dark"
+			android:layout_marginLeft = "98dp"
+			
+			android:id="@+id/tvheight" />
+		<EditText
+			android:inputType="number"
+			android:id="@+id/etheight"
+		android:textColor="@android:color/holo_blue_dark"/>
+		
+		<Button
+			android:text="Calculate"
+			android:layout_marginLeft = "115dp"
+			android:id="@+id/btncal" 
+		    android:background="@android:color/holo_green_dark"
+			/>
+		<Button
+			android:text="Clear"
+			android:id="@+id/btnclr"
+			  android:background="@android:color/holo_green_dark"
+			
+		 />
+	</GridLayout>
+
+	
+
+</android.support.design.widget.CoordinatorLayout>
